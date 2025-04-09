@@ -9,7 +9,7 @@ class Task:
     def __init__(self, name, burst_time, deadline, importance):
         self.name = name
         self.burst_time = burst_time
-        self.deadline = deadline  # in hours
+        self.deadline = deadline  
         self.importance = importance
         self.remaining_time = burst_time
         self.completed = False
@@ -240,7 +240,6 @@ class SchedulerApp:
 
         tk.Button(edit_win, text="Save", command=save_changes).grid(row=4, column=0, columnspan=2, pady=10)
 
-# Run the App
 if __name__ == "__main__":
     root = tk.Tk()
     app = SchedulerApp(root)
