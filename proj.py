@@ -63,7 +63,7 @@ def draw_gantt(timeline, title):
     plt.show()
 
 def draw_comparison_chart():
-    algorithms = ['Round Robin', 'SJF', 'Deadline Priority']
+    algorithms = ['Round Robin', 'SJF', 'Priority']
     usage = [random.randint(60, 100), random.randint(40, 80), random.randint(50, 90)]
     plt.bar(algorithms, usage, color=['red', 'green', 'blue'])
     plt.title("Algorithm Usage Comparison")
